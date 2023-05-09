@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auction Website</title>
+  <style>
+body, figure, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #f0f0f0;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  display: inline;
+  margin-left: 1rem;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+main {
+  padding: 1rem;
+}
+
+#featured-auctions {
+  margin-bottom: 2rem;
+}
+
+#auction-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#auction-list li {
+  flex: 0 0 200px;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+}
+
+#auction-list img {
+  width: 100%;
+  height: auto;
+}
+
+#auction-list h3 {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+#auction-list p {
+  font-size: 0.9rem;
+}
+
+#auction-list button {
+  margin-top: 0.5rem;
+}
+
+    </style>
+</head>
+<body>
+  <header>
+    <h1>Auction Website</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Auctions</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="featured-auctions">
+      <h2>Featured Auctions</h2>
+      <ul id="auction-list">
+        <li>
+          <img src="item1.jpg" alt="Item 1">
+          <h3>Item 1</h3>
+          <p>Current Bid: $100</p>
+          <button onclick="bidNow(1)">Bid Now</button>
+        </li>
+        <li>
+          <img src="item2.jpg" alt="Item 2">
+          <h3>Item 2</h3>
+          <p>Current Bid: $75</p>
+          <button onclick="bidNow(2)">Bid Now</button>
+        </li>
+        <!-- Additional auction items here -->
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Auction Website. All rights reserved.</p>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
